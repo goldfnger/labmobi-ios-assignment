@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C3414A5CEA6DD4D1DB23332 /* Pods_labmobi_ios_assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B41C76E4A012311D94C3A0 /* Pods_labmobi_ios_assignment.framework */; };
 		8B5DF93A27BD11B300CD5190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DF93927BD11B300CD5190 /* AppDelegate.swift */; };
 		8B5DF93C27BD11B300CD5190 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DF93B27BD11B300CD5190 /* SceneDelegate.swift */; };
 		8B5DF94127BD11B300CD5190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5DF93F27BD11B300CD5190 /* Main.storyboard */; };
@@ -18,9 +19,12 @@
 		8B5DF95827BD2C3D00CD5190 /* ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DF95727BD2C3D00CD5190 /* ItemsTableViewCell.swift */; };
 		8B5DF95A27BD360D00CD5190 /* CommonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DF95927BD360D00CD5190 /* CommonLabel.swift */; };
 		8B5DF95E27BD38B200CD5190 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DF95D27BD38B200CD5190 /* UIView.swift */; };
+		8B5DF96527BE5C0200CD5190 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B5DF96427BE5C0200CD5190 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75D522CDA11C658DE36B31D5 /* Pods-labmobi-ios-assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labmobi-ios-assignment.debug.xcconfig"; path = "Target Support Files/Pods-labmobi-ios-assignment/Pods-labmobi-ios-assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		79B41C76E4A012311D94C3A0 /* Pods_labmobi_ios_assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_labmobi_ios_assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5DF93627BD11B300CD5190 /* labmobi-ios-assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "labmobi-ios-assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5DF93927BD11B300CD5190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B5DF93B27BD11B300CD5190 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +38,8 @@
 		8B5DF95727BD2C3D00CD5190 /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
 		8B5DF95927BD360D00CD5190 /* CommonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLabel.swift; sourceTree = "<group>"; };
 		8B5DF95D27BD38B200CD5190 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		8B5DF96427BE5C0200CD5190 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DA52A1D8BA7AB0DB9BCF1C2F /* Pods-labmobi-ios-assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labmobi-ios-assignment.release.xcconfig"; path = "Target Support Files/Pods-labmobi-ios-assignment/Pods-labmobi-ios-assignment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C3414A5CEA6DD4D1DB23332 /* Pods_labmobi_ios_assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		143997DD0AC01DE0578EDCA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79B41C76E4A012311D94C3A0 /* Pods_labmobi_ios_assignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8B5DF92D27BD11B300CD5190 = {
 			isa = PBXGroup;
 			children = (
 				8B5DF93827BD11B300CD5190 /* labmobi-ios-assignment */,
 				8B5DF93727BD11B300CD5190 /* Products */,
+				B10E03989685C4B73489E06B /* Pods */,
+				143997DD0AC01DE0578EDCA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +88,7 @@
 				8B5DF94F27BD249400CD5190 /* Controller */,
 				8B5DF94E27BD248F00CD5190 /* View */,
 				8B5DF94D27BD248800CD5190 /* Model */,
+				8B5DF96227BE5B6000CD5190 /* Service */,
 				8B5DF93F27BD11B300CD5190 /* Main.storyboard */,
 				8B5DF94227BD11B500CD5190 /* Assets.xcassets */,
 				8B5DF94427BD11B500CD5190 /* LaunchScreen.storyboard */,
@@ -130,6 +148,31 @@
 			path = "Class Extensions";
 			sourceTree = "<group>";
 		};
+		8B5DF96227BE5B6000CD5190 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8B5DF96327BE5B8E00CD5190 /* Firebase */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8B5DF96327BE5B8E00CD5190 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				8B5DF96427BE5C0200CD5190 /* GoogleService-Info.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		B10E03989685C4B73489E06B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75D522CDA11C658DE36B31D5 /* Pods-labmobi-ios-assignment.debug.xcconfig */,
+				DA52A1D8BA7AB0DB9BCF1C2F /* Pods-labmobi-ios-assignment.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B5DF94A27BD11B500CD5190 /* Build configuration list for PBXNativeTarget "labmobi-ios-assignment" */;
 			buildPhases = (
+				5BEE3C7347F481BC0CF70FC3 /* [CP] Check Pods Manifest.lock */,
 				8B5DF93227BD11B300CD5190 /* Sources */,
 				8B5DF93327BD11B300CD5190 /* Frameworks */,
 				8B5DF93427BD11B300CD5190 /* Resources */,
+				2CEC9FC388B2A53B4FD3432F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,12 +234,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B5DF94627BD11B500CD5190 /* LaunchScreen.storyboard in Resources */,
+				8B5DF96527BE5C0200CD5190 /* GoogleService-Info.plist in Resources */,
 				8B5DF94327BD11B500CD5190 /* Assets.xcassets in Resources */,
 				8B5DF94127BD11B300CD5190 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CEC9FC388B2A53B4FD3432F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-labmobi-ios-assignment/Pods-labmobi-ios-assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-labmobi-ios-assignment/Pods-labmobi-ios-assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-labmobi-ios-assignment/Pods-labmobi-ios-assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BEE3C7347F481BC0CF70FC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-labmobi-ios-assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B5DF93227BD11B300CD5190 /* Sources */ = {
@@ -352,6 +440,7 @@
 		};
 		8B5DF94B27BD11B500CD5190 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D522CDA11C658DE36B31D5 /* Pods-labmobi-ios-assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -379,6 +468,7 @@
 		};
 		8B5DF94C27BD11B500CD5190 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA52A1D8BA7AB0DB9BCF1C2F /* Pods-labmobi-ios-assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
