@@ -20,6 +20,12 @@
 		8B5DF95A27BD360D00CD5190 /* CommonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DF95927BD360D00CD5190 /* CommonLabel.swift */; };
 		8B5DF95E27BD38B200CD5190 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DF95D27BD38B200CD5190 /* UIView.swift */; };
 		8B5DF96527BE5C0200CD5190 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B5DF96427BE5C0200CD5190 /* GoogleService-Info.plist */; };
+		8B5DF96727BE5DF700CD5190 /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DF96627BE5DF700CD5190 /* FirebaseCollectionReference.swift */; };
+		8B5DF96927BE5FA100CD5190 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DF96827BE5FA100CD5190 /* Item.swift */; };
+		8B5DF96D27BE8C8C00CD5190 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DF96C27BE8C8C00CD5190 /* AddItemViewController.swift */; };
+		8B5DF96F27BE8D7A00CD5190 /* CommonTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DF96E27BE8D7A00CD5190 /* CommonTextField.swift */; };
+		8B5DF97127BE9D5D00CD5190 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DF97027BE9D5D00CD5190 /* UIViewController.swift */; };
+		8B5DF97327BEB41A00CD5190 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DF97227BEB41A00CD5190 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,12 @@
 		8B5DF95927BD360D00CD5190 /* CommonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLabel.swift; sourceTree = "<group>"; };
 		8B5DF95D27BD38B200CD5190 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		8B5DF96427BE5C0200CD5190 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8B5DF96627BE5DF700CD5190 /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
+		8B5DF96827BE5FA100CD5190 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		8B5DF96C27BE8C8C00CD5190 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		8B5DF96E27BE8D7A00CD5190 /* CommonTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextField.swift; sourceTree = "<group>"; };
+		8B5DF97027BE9D5D00CD5190 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		8B5DF97227BEB41A00CD5190 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		DA52A1D8BA7AB0DB9BCF1C2F /* Pods-labmobi-ios-assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labmobi-ios-assignment.release.xcconfig"; path = "Target Support Files/Pods-labmobi-ios-assignment/Pods-labmobi-ios-assignment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				8B5DF95227BD26E200CD5190 /* Constants.swift */,
+				8B5DF96827BE5FA100CD5190 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,8 +131,8 @@
 		8B5DF94F27BD249400CD5190 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8B5DF95427BD2ABE00CD5190 /* RootNavigationController.swift */,
-				8B5DF95027BD264E00CD5190 /* ItemsTableViewController.swift */,
+				8B5DF96A27BE8C5000CD5190 /* Root */,
+				8B5DF96B27BE8C5B00CD5190 /* Items */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -136,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				8B5DF95927BD360D00CD5190 /* CommonLabel.swift */,
+				8B5DF96E27BE8D7A00CD5190 /* CommonTextField.swift */,
+				8B5DF97227BEB41A00CD5190 /* AlertView.swift */,
 			);
 			path = "UI Elements";
 			sourceTree = "<group>";
@@ -144,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				8B5DF95D27BD38B200CD5190 /* UIView.swift */,
+				8B5DF97027BE9D5D00CD5190 /* UIViewController.swift */,
 			);
 			path = "Class Extensions";
 			sourceTree = "<group>";
@@ -159,9 +175,27 @@
 		8B5DF96327BE5B8E00CD5190 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				8B5DF96627BE5DF700CD5190 /* FirebaseCollectionReference.swift */,
 				8B5DF96427BE5C0200CD5190 /* GoogleService-Info.plist */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		8B5DF96A27BE8C5000CD5190 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				8B5DF95427BD2ABE00CD5190 /* RootNavigationController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		8B5DF96B27BE8C5B00CD5190 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				8B5DF95027BD264E00CD5190 /* ItemsTableViewController.swift */,
+				8B5DF96C27BE8C8C00CD5190 /* AddItemViewController.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 		B10E03989685C4B73489E06B /* Pods */ = {
@@ -295,8 +329,14 @@
 				8B5DF95A27BD360D00CD5190 /* CommonLabel.swift in Sources */,
 				8B5DF95827BD2C3D00CD5190 /* ItemsTableViewCell.swift in Sources */,
 				8B5DF93C27BD11B300CD5190 /* SceneDelegate.swift in Sources */,
+				8B5DF96F27BE8D7A00CD5190 /* CommonTextField.swift in Sources */,
+				8B5DF97127BE9D5D00CD5190 /* UIViewController.swift in Sources */,
+				8B5DF96927BE5FA100CD5190 /* Item.swift in Sources */,
+				8B5DF97327BEB41A00CD5190 /* AlertView.swift in Sources */,
+				8B5DF96727BE5DF700CD5190 /* FirebaseCollectionReference.swift in Sources */,
 				8B5DF95527BD2ABE00CD5190 /* RootNavigationController.swift in Sources */,
 				8B5DF95327BD26E200CD5190 /* Constants.swift in Sources */,
+				8B5DF96D27BE8C8C00CD5190 /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

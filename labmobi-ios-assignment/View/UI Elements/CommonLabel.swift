@@ -9,18 +9,14 @@ import UIKit
 
 class CommonLabel: UILabel {
   init(title: String = "",
-       textAlignment: NSTextAlignment = .natural,
        font: UIFont = Constants.Design.Font.labelTitleFont,
        textColor: UIColor = Constants.Design.Colors.labelColor) {
-    
     super.init(frame: .zero)
-    
     numberOfLines = 0
     lineBreakMode = .byTruncatingTail
-    
-    self.textAlignment = textAlignment
-    self.font = font
+    textAlignment = .natural
     text = title
+    self.font = font
     self.textColor = textColor
   }
   

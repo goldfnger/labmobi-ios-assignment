@@ -9,14 +9,26 @@ import UIKit
 
 class ItemsTableViewCell: UITableViewCell {
   //MARK: - Vars
-  var itemName = CommonLabel(title: "itemName")
-  var itemDescription = CommonLabel(title: "itemDescription", font: Constants.Design.Font.labelDescriptionFont)
+  private var safeArea: UILayoutGuide!
+  
+  var itemName = CommonLabel()
+  var itemDescription = CommonLabel(font: Constants.Design.Font.labelDescriptionFont)
   
   //MARK: - ViewCell
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     
     configureCell()
+  }
+  
+  func cellSetup(_ item: Item) {
+    itemName.text = item.name
+    itemDescription.text = item.description
+    if item.isSelected {
+      accessoryType = .checkmark
+    } else {
+      accessoryType = .none
+    }
   }
   
   //MARK: - Cell configuration
@@ -26,19 +38,24 @@ class ItemsTableViewCell: UITableViewCell {
     contentView.addSubview(itemName)
     contentView.addSubview(itemDescription)
     
-    itemName.anchor(top: contentView.topAnchor,
+    setupConstraints()
+  }
+  
+  private func setupConstraints() {
+    safeArea = contentView.layoutMarginsGuide
+
+    itemName.anchor(top: safeArea.topAnchor,
                     bottom: nil,
-                    leading: contentView.leadingAnchor,
-                    trailing: contentView.trailingAnchor,
-                    padding: UIEdgeInsets(top: 8, left: 16, bottom: 0, right: 16)
-    )
-    itemDescription.anchor(top: itemName.bottomAnchor,
-                           bottom: contentView.bottomAnchor ,
-                           leading: itemName.leadingAnchor,
-                           trailing: itemName.trailingAnchor,
-                           padding: UIEdgeInsets(top: 5, left: 0, bottom: 8, right: 16)
+                    leading: safeArea.leadingAnchor,
+                    trailing: safeArea.trailingAnchor
     )
     
+    itemDescription.anchor(top: itemName.bottomAnchor,
+                           bottom: safeArea.bottomAnchor ,
+                           leading: safeArea.leadingAnchor,
+                           trailing: safeArea.trailingAnchor,
+                           padding: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    )
   }
   
   required init?(coder: NSCoder) {

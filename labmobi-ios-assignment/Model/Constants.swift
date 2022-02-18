@@ -14,10 +14,12 @@ struct Constants {
       static let white = UIColor.white
       static let labelColor = UIColor.label
       static let systemBackground = UIColor.systemBackground
+      static let black = UIColor.black.cgColor
+      static let systemGrayCG = UIColor.systemGray.cgColor
     }
     
     struct Font {
-      static let labelTitleFont = UIFont.systemFont(ofSize: 16)
+      static let labelTitleFont = UIFont.boldSystemFont(ofSize: 16)
       static let labelDescriptionFont = UIFont.systemFont(ofSize: 13)
     }
     
@@ -28,9 +30,23 @@ struct Constants {
   
   struct Content {
     static let appName = "mobilab test assignment"
+    static let createItem =  "Create Item"
+    static let enterItemName = "Please enter Item name"
+    static let enterItemDescription = "Please enter Item description"
   }
   
   struct CellIdentifiers {
     static let itemsTableViewCell = "ItemsTableViewCell"
+  }
+  
+  struct Firestore {
+    static let itemId = "itemId"
+    static let itemName = "itemName"
+    static let itemDescription = "itemDescription"
+    static let isSelected = "isSelected"
+  }
+  
+  struct Errors {
+    static let emptyFields = "Please complete both fields"
   }
 }
